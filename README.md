@@ -57,7 +57,24 @@ This project includes:
     - `gantt_mlfq.csv`
   - `README.md`
   - `LICENSE`
+---
 
+## ⚡ How It Works
+
+### 🧩 C++ Simulation
+Each algorithm inherits from a base `Scheduler` class and implements its own `schedule()` function.  
+During execution:
+1. Each process’s `arrival_time`, `burst_time`, and other metrics are used.
+2. Gantt chart entries are recorded (`PID`, `Start`, `End`).
+3. Average Waiting Time (AWT) and Average Turnaround Time (ATAT) are calculated.
+4. Results are saved in `.csv` files for visualization.
+
+### 📊 Python Visualization
+The `visualize_gantt.py` script:
+- Reads the exported `.csv` files.
+- Plots a horizontal **Gantt Chart** using `matplotlib`.
+- Displays **Avg WT** and **Avg TAT** at the top-right corner.
+- Allows you to select any algorithm from a menu and view one chart at a time.
 ---
 
 ## 🔹 How to Use
