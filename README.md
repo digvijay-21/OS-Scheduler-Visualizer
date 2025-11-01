@@ -49,7 +49,7 @@ This project includes:
     - `mlfq.cpp` / `mlfq.h`
     - `scheduler.h` — Base Scheduler class and Process struct
   - **python/** (Python visualization)
-    - `gantt_visualizer.py` — Generates Gantt charts from CSV timelines
+    - `visualize_gantt.py` — Generates Gantt charts from CSV timelines
   - **data/** (Sample CSV outputs)
     - `output_fcfs.csv`
     - `output_sjf.csv`
@@ -86,5 +86,30 @@ Open terminal in the `cpp/` folder:
 ```bash
 g++ main.cpp fcfs.cpp sjf.cpp rr.cpp mlfq.cpp -o scheduler
 ./scheduler
+pyhon visualize_gantt.py 
+```
 
+---
+
+## 🔹 Screenshots
+
+### 📊 Scheduler.exe File Output
+![App Flow](screenshots/algo_metrics_1.png)
+
+![App Flow](screenshots/algo_metrics_2.png)
+
+
+## 📊 Gantt Chart Outputs
+
+### 1. FCFS
+![App Flow](screenshots/fcfs_gantt.png)
+
+### 2. SRTF
+![App Flow](screenshots/sjf_gantt.png)
+
+### 3. RR
+![App Flow](screenshots/rr_gantt.png)
+
+### 4. MLFQ
+![App Flow](screenshots/mlfq_gantt.png)
 
